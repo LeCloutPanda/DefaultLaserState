@@ -1,20 +1,15 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
+using BepInEx.NET.Common;
 using BepInExResoniteShim;
 using FrooxEngine;
 using HarmonyLib;
 
 namespace DefaultLaserState;
 
-[BepInPlugin(GUID, Name, Version)]
-public class Patch : BaseResonitePlugin
+[ResonitePlugin("dev.lecloutpanda.defaultlaserstate", "Default Laser State", "1.0.0", "LeCloutPanda", "https://github.com/LeCloutPanda/DefaultLaserState")]
+public class Patch : BasePlugin 
 {
-    public const string GUID = "dev.lecloutpanda.defaultlaserstate";
-    public const string Name = "Default Laser State";
-    public const string Version = "1.0.0";
-    public override string Author => "LeCloutPanda";
-    public override string Link => "https://github.com/LeCloutPanda/DefaultLaserState";
-
     private static ConfigEntry<bool> LASERSTATE;
 
     public override void Load()
