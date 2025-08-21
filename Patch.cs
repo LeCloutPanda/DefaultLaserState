@@ -1,19 +1,10 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
-using BepInEx.NET.Common;
-using Elements.Core;
+using BepInExResoniteShim;
 using FrooxEngine;
-using FrooxEngine.UIX;
 using HarmonyLib;
-using Renderite.Shared;
 
 namespace DefaultLaserState;
-
-public abstract class BaseResonitePlugin : BasePlugin
-{
-    public abstract string Author { get; }
-    public abstract string Link { get; }
-}
 
 [BepInPlugin(GUID, Name, Version)]
 public class Patch : BaseResonitePlugin
