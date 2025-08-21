@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultLaserState", "DefaultLaserState.csproj", "{6CFAB73A-9979-EF58-03FE-97F107A19CBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CFAB73A-9979-EF58-03FE-97F107A19CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFAB73A-9979-EF58-03FE-97F107A19CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFAB73A-9979-EF58-03FE-97F107A19CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFAB73A-9979-EF58-03FE-97F107A19CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFD6A298-EE7B-4387-A769-4D708FB706B9}
+	EndGlobalSection
+EndGlobal
