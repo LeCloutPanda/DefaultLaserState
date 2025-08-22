@@ -7,6 +7,7 @@ using HarmonyLib;
 
 namespace DefaultLaserState;
 
+[BepInDependency("ResoniteModding.BepInExResoniteShim")]
 [ResonitePlugin("dev.lecloutpanda.defaultlaserstate", "Default Laser State", "1.0.0", "LeCloutPanda", "https://github.com/LeCloutPanda/DefaultLaserState")]
 public class Patch : BasePlugin 
 {
