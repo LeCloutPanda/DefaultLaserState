@@ -7,18 +7,18 @@ using HarmonyLib;
 
 namespace DefaultLaserState;
 
-[BepInDependency("ResoniteModding.BepInExResoniteShim")]
-[ResonitePlugin("dev.lecloutpanda.defaultlaserstate", "Default Laser State", "1.0.0", "LeCloutPanda", "https://github.com/LeCloutPanda/DefaultLaserState")]
-public class Patch : BasePlugin 
+[ResonitePlugin(PluginMetadata.GUID, PluginMetadata.NAME, PluginMetadata.VERSION, PluginMetadata.AUTHORS, PluginMetadata.REPOSITORY_URL)]
+[BepInDependency(BepInExResoniteShim.PluginMetadata.GUID, BepInDependency.DependencyFlags.HardDependency)]
+public class Patch : BasePlugin
 {
-    private static ConfigEntry<bool> LASERSTATE;
+	private static ConfigEntry<bool> LASERSTATE;
 
-    public override void Load()
-    {
-        LASERSTATE = Config.Bind("General", "Default Laser State", true, "Enable/disable the laser on spawn");
-    
-        HarmonyInstance.PatchAll();
-    }
+	public override void Load()
+	{
+		LASERSTATE = Config.Bind("General", "Default Laser State", true, "Enable/disable the laser on spawn");
+
+		HarmonyInstance.PatchAll();
+	}
 
 	[HarmonyPatch(typeof(InteractionHandler), "OnAwake")]
 	private class CommonToolPatch
